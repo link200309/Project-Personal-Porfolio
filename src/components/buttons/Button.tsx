@@ -1,10 +1,18 @@
+type ButtonProps = {
+  children: React.ReactNode;
+  variant?: "primary" | "secondary" | "outline";
+  size?: "sm" | "md" | "lg";
+  width?: string;
+  onClick?: () => void;
+};
+
 export const Button = ({
   children,
   variant = "primary",
   size = "md",
   width = "100%",
   onClick,
-}) => {
+}: ButtonProps) => {
   const variants = {
     primary: "bg-primary-pri1 text-white",
     secondary: "bg-primary-pri2 text-white",

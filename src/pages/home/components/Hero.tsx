@@ -9,7 +9,7 @@ import { Button } from "@/components/buttons/Button";
 
 export const Hero = () => {
   return (
-    <header className="h-screen flex">
+    <header className="h-screen w-full flex">
       {/*Imagen qeen1*/}
       <div className="w-[25vw] absolute animate-float">
         <img src={qeen1} alt="Hero Image" />
