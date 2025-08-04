@@ -7,7 +7,7 @@ export default {
         primary: {
           pri1: "#FF211E",
           pri2: "#fe7e53",
-          pri3: "#fe7e53",
+          pri3: "#FAA628",
         },
       },
 
@@ -40,10 +40,18 @@ export default {
             transform: "translateY(-20px)",
           },
         },
+        moveAround: {
+          "0%": { bottom: "0px", left: "-1px" },
+          "25%": { bottom: "calc(100% - 4px)", left: "-1px" },
+          "50%": { bottom: "calc(100% - 4px)", left: "calc(100% - 3px)" },
+          "75%": { bottom: "0px", left: "calc(100% - 3px)" },
+          "100%": { bottom: "0px", left: "-1px" },
+        },
       },
 
       animation: {
         float: "float 3s ease-in-out infinite",
+        moveAround: "moveAround 7s linear infinite",
       },
     },
   },

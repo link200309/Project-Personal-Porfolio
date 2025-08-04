@@ -18,7 +18,9 @@ export const Hero = () => {
       {/*Nombre y presentacion*/}
       <div className="w-[100%] flex items-center justify-center">
         <div className="max-w-85 z-10 text-center flex flex-col gap-5">
-          <h1 className="text-display-lg font-bold">John Henry CH. Z.</h1>
+          <h1 className="text-display-lg font-bold">
+            John Henry <span className="text-primary-pri3">CH. Z.</span>
+          </h1>
           <h2 className="text-display-md text-primary-pri1">
             System Engineer and Developer
           </h2>

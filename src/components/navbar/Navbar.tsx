@@ -12,8 +12,14 @@ const Navbar = () => {
       <ul className="h-16 flex items-center justify-center gap-5">
         {options.map((option, key) => {
           return (
-            <a href={option.href} key={key} className="active:scale-95">
-              <li className="text-white">{option.name}</li>
+            <a
+              href={option.href}
+              key={key}
+              className="active:scale-95 hover:underline decoration-primary-pri2 transition-all duration-300"
+            >
+              <li className="text-white hover:text-primary-pri3">
+                {option.name}
+              </li>
             </a>
           );
         })}
