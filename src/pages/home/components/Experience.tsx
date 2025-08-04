@@ -5,31 +5,64 @@ const Experience = () => {
         Experience
       </h2>
 
-      <article className="max-w-85 mt-10">
-        <div className="bg-primary-pri2/50 relative p-10 rounded-3xl border border-primary-pri2 card-border-ligth">
-          <h3 className="text-title-md">
+      <article className="max-w-3xl mt-10">
+        <div className="relative p-10 rounded-3xl border-2 border-primary-pri3 card-border-ligth">
+          <h3 className="text-title-md font-bold">
             Universidad Mayor de San Simon - System Engineer
           </h3>
-          <p className="text-label-sm">Febrero 2022 - PRESENTE</p>
-          <ul className="list-disc pl-5 mt-5">
+          <p className="text-label-sm font-medium">Febrero 2022 - PRESENTE</p>
+          <ul className="list-disc pl-5 mt-5 leading-7">
             <li>
-              Participated in the development of a web application for managing
-              student records, using React and Node.js.
+              I acquired essential programming skills ,{" "}
+              <span className="text-primary-pri1 font-semibold">
+                OOP, data structures, and algorithms
+              </span>
+              .
             </li>
             <li>
-              Collaborated with a team of developers to implement new features
-              and improve application performance.
+              I developed various{" "}
+              <span className="text-primary-pri1 font-semibold">
+                team projects
+              </span>
+              , which allowed me to simulate a work-like environment.
             </li>
-            <li> Assisted in the design and implementation of RESTful APIs.</li>
-            <li> Assisted in the design and implementation of RESTful APIs.</li>
-            <li> Assisted in the design and implementation of RESTful APIs.</li>
             <li>
-              Collaborated with a team of developers to implement new features
-              and improve application performance.
+              I worked with{" "}
+              <span className="text-primary-pri1 font-semibold">
+                SQL and NoSQL databases
+              </span>
+              , managing databases and creating optimized queries .
             </li>
-            <li> Assisted in the design and implementation of RESTful APIs.</li>
-            <li> Assisted in the design and implementation of RESTful APIs.</li>
-            <li> Assisted in the design and implementation of RESTful APIs.</li>
+            <li>
+              I acquired extensive{" "}
+              <span className="text-primary-pri1 font-semibold">
+                mathematical
+              </span>{" "}
+              and{" "}
+              <span className="text-primary-pri1 font-semibold">
+                statistical{" "}
+              </span>
+              knowledge, which allows me to create innovative solutions in
+              collaboration with various tools and technologies.
+            </li>
+            <li>
+              I developed efficient and robust{" "}
+              <span className="text-primary-pri1 font-semibold">
+                web applications
+              </span>
+              . And implementation of{" "}
+              <span className="text-primary-pri1 font-semibold">
+                RESTful APIs
+              </span>
+              .
+            </li>
+            <li>
+              I developed cross-platform{" "}
+              <span className="text-primary-pri1 font-semibold">
+                mobile applications
+              </span>
+              .
+            </li>
           </ul>
         </div>
       </article>

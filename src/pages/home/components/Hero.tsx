@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 //Assets
 import qeen1 from "@/assets/images/characters/queen_1.png";
+import chara1 from "@/assets/images/characters/chara_1.png";
 
 //Components
 import { Button } from "@/components/buttons/Button";
@@ -13,6 +14,9 @@ export const Hero = () => {
       {/*Imagen qeen1*/}
       <div className="w-[25vw] absolute animate-float">
         <img src={qeen1} alt="Hero Image" />
+      </div>
+      <div className="w-[25vw] absolute animate-moveChara right-0">
+        <img src={chara1} alt="Hero Chara Image" />
       </div>
 
       {/*Nombre y presentacion*/}
