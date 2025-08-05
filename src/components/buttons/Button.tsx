@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 type ButtonProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "outline";
@@ -35,8 +37,14 @@ export const Button = ({
     `;
 
   return (
-    <button className={buttonClasses} onClick={onClick}>
+    <motion.button
+      className={buttonClasses}
+      onClick={onClick}
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.05 }}
+      transition={{ ease: "easeInOut", duration: 0.2 }}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 };
