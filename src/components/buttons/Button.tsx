@@ -28,7 +28,7 @@ export const Button = ({
     lg: "px-8 py-4 text-lg",
   };
 
-  const baseClasses = `rounded w-[${width}] m-auto`;
+  const baseClasses = `rounded w-[${width}]`;
 
   const buttonClasses = `
      ${baseClasses}
