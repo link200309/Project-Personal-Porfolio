@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
+  <!-- Fondo transparente, logo tipo "django" en verde característico -->
+  <rect width="256" height="256" fill="none"/>
+  <g transform="translate(16,128)">
+    <!-- Ajusta font-size o transform si quieres otro escalado/posición -->
+    <text x="0" y="40" font-family="Verdana, Arial, sans-serif" font-weight="700" font-size="64" fill="#092E20" letter-spacing="-2">
+      django
+    </text>
+  </g>
+</svg>
