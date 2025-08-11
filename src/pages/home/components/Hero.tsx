@@ -39,14 +39,14 @@ export const Hero = () => {
         {protections.map((protection) =>
           sampleArray.map((_, index) => {
             const size = index * 150;
-            const xOffset = 10 - index * 5;
+            const xOffset = 0 - index * 2;
             return (
               <motion.div
                 key={protection.id + index}
                 style={{ width: `${size}px`, height: `${size}px` }}
-                className="absolute top-[48%] right-0 rounded-full bg-primary-pri3/20 shadow-md shadow-primary-pri3/20 z-50"
-                initial={{ x: 0, y: -size / 2, opacity: 1 }}
-                animate={{ x: xOffset, opacity: 0 }}
+                className="absolute top-[48%] right-0 rounded-full bg-primary-pri3/10 shadow-md shadow-primary-pri3/10 z-50"
+                initial={{ x: xOffset, y: -size / 2, opacity: 1 }}
+                animate={{ x: xOffset + 10, opacity: 0, scale: 1.05 }}
                 transition={{ duration: 1 }}
                 onAnimationComplete={() => {
                   if (index === sampleArray.length - 1) {
