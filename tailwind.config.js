@@ -56,7 +56,6 @@ export default {
           "100%": { transform: "translateY(0px)" },
         },
       },
-
       animation: {
         float: "float 3s ease-in-out infinite",
         moveAround: "moveAround 7s linear infinite",
