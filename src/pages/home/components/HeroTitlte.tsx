@@ -9,7 +9,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import useAnimationTyping from "@/hooks/useAnimationTyping";
 
 const HeroTitlte = () => {
-  const title = useRef<HTMLHeadingElement>(null);
+  const title = useRef<HTMLHeadingElement | null>(null);
   useAnimationTyping("System Engineer and Developer", title);
   return (
     <div className="w-[100%] flex flex-col gap-5 items-center justify-center z-10 text-center">

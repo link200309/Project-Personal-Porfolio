@@ -3,10 +3,11 @@ import { useEffect, useRef, type RefObject } from "react";
 
 const useAnimationTyping = (
   text: string,
-  title: RefObject<HTMLHeadingElement>
+  title: RefObject<HTMLHeadingElement | null>
 ): void => {
   const render = useRef(false);
   useEffect(() => {
+    if (!title) return;
     const typingTitle = () => {
       render.current = true;
       let index = 0;

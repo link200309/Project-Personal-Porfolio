@@ -16,7 +16,7 @@ const Experience = () => {
           return (
             <motion.div
               key={index}
-              className="relative p-10 rounded-3xl border border-primary-pri3 card-border-ligth"
+              className="relative p-10 rounded-3xl border border-primary-pri3 card-border-ligth mb-6"
               initial={{ opacity: 0 }}
               transition={{ duration: 2, type: "spring" }}
               whileInView={{ opacity: 1 }}

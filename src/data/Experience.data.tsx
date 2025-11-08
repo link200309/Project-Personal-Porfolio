@@ -8,7 +8,7 @@ type Experience = {
 
 export const experiences: Experience[] = [
   {
-    title: "Universidad Mayor de San Simon - System Engineer",
+    title: "University of San Simon - System Engineer",
     date: "Febrero 2022 - PRESENTE",
     descriptions: [
       <>
@@ -60,6 +60,47 @@ export const experiences: Experience[] = [
           mobile applications
         </span>
         .
+      </>,
+    ],
+  },
+
+  {
+    title: "DeosCorp SRL. - Full Stack Developer",
+    date: "Agosto 2025 - Octubre 2025",
+    descriptions: [
+      <>
+        I worked developing interfaces with ,{" "}
+        <span className="text-primary-pri1 font-semibold">
+          React, Tailwind CSS, and Shadcn
+        </span>
+        .
+      </>,
+      <>
+        I develop endpoints with{" "}
+        <span className="text-primary-pri1 font-semibold">Express</span>, for
+        various functionalities.
+      </>,
+      <>
+        I developed interactive tables with{" "}
+        <span className="text-primary-pri1 font-semibold">Tanstack Table</span>.
+      </>,
+      <>
+        I develop searches and filters through the{" "}
+        <span className="text-primary-pri1 font-semibold">server</span>{" "}
+      </>,
+      <>
+        I develop pagination using the
+        <span className="text-primary-pri1 font-semibold">server </span>
+        integrated with{" "}
+        <span className="text-primary-pri1 font-semibold">tanstack table</span>.
+      </>,
+      <>
+        I develop Dashboards with Charts using{" "}
+        <span className="text-primary-pri1 font-semibold">Chart.js</span>.
+      </>,
+      <>
+        I develop authentication based on{" "}
+        <span className="text-primary-pri1 font-semibold">JWT</span>.
       </>,
     ],
   },
