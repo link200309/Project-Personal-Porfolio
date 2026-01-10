@@ -68,7 +68,7 @@ export const Hero = () => {
         {shots.map((shot) => (
           <motion.div
             key={shot.id}
-            className="w-6 h-6 rounded-full bg-[#FD9FC8] shadow-md shadow-[#FD9FC8] absolute top-[30%] z-50"
+            className="w-5 h-5 rounded-full bg-[#ffe3f4] shadow-[0_0px_35px] shadow-fuchsia-700 absolute top-[30%] z-50"
             initial={{ y: 0, x: 0 }}
             animate={{ y: 200, x: -800 }}
             transition={{ duration: 0.3 }}

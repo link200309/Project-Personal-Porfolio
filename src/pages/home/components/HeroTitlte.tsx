@@ -14,7 +14,7 @@ const HeroTitlte = () => {
   return (
     <div className="w-[100%] flex flex-col gap-5 items-center justify-center z-10 text-center">
       <h1 className="text-display-lg font-bold">
-        John Henry <span className="text-primary-pri3">CH. Z.</span>
+        John <span className="text-primary-pri3">Henry</span>
       </h1>
       <h2 className="text-display-md text-primary-pri1" ref={title}></h2>
       <p>

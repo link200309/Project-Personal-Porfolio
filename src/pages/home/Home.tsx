@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import BgAnimation from "@/components/bg/BgAnimation";
+import Footer from "@/components/footer/Footer";
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
         <Projects />
       </main>
       <BgAnimation />
+      <Footer />
     </div>
   );
 };
