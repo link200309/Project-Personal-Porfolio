@@ -5,6 +5,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import BgAnimation from "@/components/bg/BgAnimation";
 import Footer from "@/components/footer/Footer";
+import ImageGallery from "@/components/imageGallery/ImageGallery";
 
 export const Home = () => {
   return (

@@ -15,9 +15,9 @@ import { type Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "Aplicación web para gestión de ventas y facturación electrónica",
+    title: "Aplicación web para trackear Dota 2 y gestionar logros",
     description:
-      "Participé en el desarrollo del sistema, con un enfoque principal en la facturación electrónica.",
+      "Participé en el desarrollo del sistema, con un enfoque en la creación de interfaces, endopoints y el GSI (Game State Integration) para el juego.",
     link: "",
     image: project1,
     technologies: [
@@ -26,11 +26,15 @@ export const projects: Project[] = [
         icon: reactLogo,
       },
       {
+        title: "TypeScript",
+        icon: reactLogo,
+      },
+      {
         title: "Express",
         icon: expressLogo,
       },
       {
-        title: "PostgreSQL",
+        title: "MongoDB",
         icon: postgresLogo,
       },
     ],

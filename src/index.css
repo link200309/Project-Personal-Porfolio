@@ -35,6 +35,10 @@ body {
   animation: 5s linear 0s infinite normal none running strokeAnim;
 }
 
+.hover-selected:hover {
+  z-index: 10;
+}
+
 @keyframes strokeAnim {
   0% {
     stroke-dashoffset: 2000px;
