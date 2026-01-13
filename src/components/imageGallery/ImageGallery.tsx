@@ -8,7 +8,7 @@ import { useState } from "react";
 const gallery = [screen1, screen2, screen3, screen4, screen5];
 
 const ImageGallery = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
 
   return (
     <div className="relative h-48">
@@ -19,7 +19,7 @@ const ImageGallery = () => {
           alt=""
           className="absolute w-full rounded-lg border border-white cursor-pointer"
           onMouseEnter={() => setHoveredIndex(index)}
-          onMouseLeave={() => setHoveredIndex(null)}
+          onMouseLeave={() => setHoveredIndex(-1)}
           style={{
             top: `${index * 1}rem`,
             zIndex: hoveredIndex === index ? 50 : 5 - index,

@@ -91,7 +91,7 @@ export const projects: Project[] = [
     description:
       "Me encargué principalmente de la inscripción manual, validaciones de formularios y las APIs necesarias para su funcionamiento.",
     link: "",
-    image: "",
+    image: project1,
     technologies: [
       {
         title: "React",
