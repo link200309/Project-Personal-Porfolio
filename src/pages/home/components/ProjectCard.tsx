@@ -11,8 +11,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
       />
 
       <div className="absolute z-10 p-4 bottom-0 w-full bg-black/50">
-        <h3 className="text-label-sm text-gray-400 ">Pagina web</h3>
-        <p className="text-white mt-2">Tracking for Dota 2</p>
+        <h3 className="text-label-sm text-gray-400 ">{project.application}</h3>
+        <p className="text-white mt-2">{project.title}</p>
       </div>
     </div>
   );

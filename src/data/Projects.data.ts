@@ -15,10 +15,11 @@ import { type Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "Aplicación web para trackear Dota 2 y gestionar logros",
+    title: "Tracking for Dota 2",
     description:
       "Participé en el desarrollo del sistema, con un enfoque en la creación de interfaces, endopoints y el GSI (Game State Integration) para el juego.",
     link: "",
+    application: "Web Page",
     image: project1,
     technologies: [
       {
@@ -40,11 +41,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Aplicación móvil para reserva de pasajes de bus",
+    title: "Bus ticket reservation",
     description:
       "Encargado del diseño y desarrollo de las interfaces de usuario, así como la creación de APIs.",
     link: "",
     image: "",
+    application: "Mobile App",
     technologies: [
       {
         title: "React Native",
@@ -61,11 +63,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Plataforma web para la enseñanza de Python",
+    title: "Python teaching platform",
     description:
       "Responsable del diseño y desarrollo de las interfaces de usuario y de la implementación de un editor de código interactivo para ejercicios prácticos.",
     link: "",
     image: "",
+    application: "Web Page",
     technologies: [
       {
         title: "React",
@@ -86,12 +89,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    title:
-      "Aplicación web para inscripciones a las Olimpiadas Oh! Sansi (Proyecto Académico)",
+    title: "Registration for the Oh! Sansi Olympics (Academic Project)",
     description:
       "Me encargué principalmente de la inscripción manual, validaciones de formularios y las APIs necesarias para su funcionamiento.",
     link: "",
     image: project1,
+    application: "Web Page",
     technologies: [
       {
         title: "React",
@@ -108,11 +111,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Aplicación de escritorio para gestión de servidor Samba en Ubuntu",
+    title: "Samba Server Manager for Ubuntu",
     description:
       "Desarrollé la interfaz gráfica y la ejecución de comandos del sistema.",
     link: "",
     image: "",
+    application: "Desktop App",
     technologies: [
       {
         title: "Python",
@@ -125,11 +129,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Aplicación web para alquiler de amigos",
+    title: "Renting friends platform",
     description:
       "Trabajé tanto en la creación de interfaces como en el desarrollo de APIs para la comunicación entre módulos.",
     link: "",
     image: "",
+    application: "Web Page",
     technologies: [
       {
         title: "React",
@@ -146,11 +151,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Juegos de escritorio",
+    title: "Desktop games",
     description:
       "Desarrollé juegos como tres en raya, serpiente y plataformas 2D simples.",
     link: "",
     image: "",
+    application: "Desktop App",
     technologies: [
       {
         title: "Java",
