@@ -1,23 +1,26 @@
 //React
 import { motion } from "framer-motion";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useContext } from "react";
 
 //Assets
 import qeen1 from "@/assets/images/characters/queen_1.png";
 import chara1 from "@/assets/images/characters/chara_1.png";
 import clickHere from "@/assets/images/characters/clickhere.png";
+import clickHereDark from "@/assets/images/characters/clickheredark.png";
 
 //Components
 import HeroTitlte from "./HeroTitlte";
 
 //hooks
 import useAnimationChara from "@/hooks/useAnimationChara";
+import { ThemeContext } from "@/context/ThemeContext";
 
 export const Hero = () => {
   const { controlsChara } = useAnimationChara();
   const [shots, setShots] = useState<{ id: number }[]>([]);
   const [protections, setProtections] = useState<{ id: number }[]>([]);
   const sampleArray = useMemo(() => [...Array(8).keys()], []);
+  const { theme } = useContext(ThemeContext);
 
   const handleShot = () => {
     setShots((prev) => [...prev, { id: Date.now() }]);
@@ -76,14 +79,25 @@ export const Hero = () => {
           ></motion.div>
         ))}
 
-        <motion.img
-          src={clickHere}
-          alt="Hero Image"
-          className="w-24 relative left-16"
-          initial={{ opacity: 0 }}
-          transition={{ duration: 20, type: "spring" }}
-          animate={{ opacity: 1 }}
-        />
+        {theme === "dark" ? (
+          <motion.img
+            src={clickHereDark}
+            alt="Hero Image"
+            className="w-24 relative left-16"
+            initial={{ opacity: 0 }}
+            transition={{ duration: 20, type: "spring" }}
+            animate={{ opacity: 1 }}
+          />
+        ) : (
+          <motion.img
+            src={clickHere}
+            alt="Hero Image"
+            className="w-24 relative left-16"
+            initial={{ opacity: 0 }}
+            transition={{ duration: 20, type: "spring" }}
+            animate={{ opacity: 1 }}
+          />
+        )}
       </motion.div>
 
       <HeroTitlte />
