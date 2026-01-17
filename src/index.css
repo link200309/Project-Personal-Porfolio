@@ -20,7 +20,7 @@ body {
     #faa628 0px 0px 40px 10px;
   animation: borderMove 7s linear infinite;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .card-border-ligth:hover::before {

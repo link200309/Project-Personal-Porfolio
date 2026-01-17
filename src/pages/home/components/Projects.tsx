@@ -1,15 +1,19 @@
 //React
-import { useMemo } from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 //Components
 import SectionTitle from "@/components/titles/SectionTitle";
 import ProjectCard from "./ProjectCard";
+import ImageGallery from "@/components/imageGallery/ImageGallery";
 
 //Data
 import { projects } from "@/data/Projects.data";
+import { type Project } from "@/types";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<Project>(null);
+
   return (
     <section className="relative my-20">
       <div className="absolute w-96 h-96 rounded-full bg-[radial-gradient(circle_at_center,_rgba(255,120,0,0.35),_transparent_70%)] top-[25%] right-[25%]"></div>
@@ -21,11 +25,18 @@ const Projects = () => {
             initial={{ opacity: 0 }}
             transition={{ duration: 2, type: "spring" }}
             whileInView={{ opacity: 1 }}
+            onClick={() => setSelectedProject(project)}
           >
             <ProjectCard project={project} />
           </motion.div>
         ))}
       </article>
+      {selectedProject && (
+        <ImageGallery
+          selectedProject={selectedProject}
+          setSelectedProject={setSelectedProject}
+        />
+      )}
     </section>
   );
 };

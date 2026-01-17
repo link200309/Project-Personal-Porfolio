@@ -1,8 +1,8 @@
 export type Project = {
   title: string;
   description: string;
-  image: string;
   application: string;
+  gallery?: string[];
   link: string;
   technologies: {
     title: string;
