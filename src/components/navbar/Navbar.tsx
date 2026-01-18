@@ -8,7 +8,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-center w-[645px] fixed top-2  backdrop-blur-[10px] bg-[#000]/80 dark:bg-primary-pri1/60 z-[1000] rounded-md">
+    <nav className="flex justify-center w-[645px] fixed top-2  backdrop-blur-[10px] dark:bg-primary-pri1/50 z-[1000] rounded-md bg-[url(/src/assets/images/decoration/noisy.webp)]">
       <ul className="w-full h-16 flex items-center justify-evenly">
         {options.map((option, key) => {
           return (

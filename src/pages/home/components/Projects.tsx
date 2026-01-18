@@ -12,11 +12,11 @@ import { projects } from "@/data/Projects.data";
 import { type Project } from "@/types";
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState<Project>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section className="relative my-20">
-      <div className="absolute w-96 h-96 rounded-full bg-[radial-gradient(circle_at_center,_rgba(255,120,0,0.35),_transparent_70%)] top-[25%] right-[25%]"></div>
+      <div className="absolute w-full h-full rounded-[30%] bg-[radial-gradient(circle_at_center,_rgba(255,120,0,0.35),_transparent_100%)] blur-[100px]"></div>
       <SectionTitle title="Projects" />
       <article className="max-w-3xl mt-10 grid grid-cols-3 gap-4">
         {projects.map((project, index) => (

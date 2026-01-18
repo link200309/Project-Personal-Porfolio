@@ -27,7 +27,7 @@ const HeroTitlte = () => {
         <FaGithub className="text-display-sm" />
       </div>
 
-      <Button variant="outline" width="50%">
+      <Button variant="outline" width="10%">
         Descargar CV
       </Button>
     </div>

@@ -12,7 +12,7 @@ const gallery = [screen1, screen2, screen3, screen4, screen5];
 
 type ImageGalleryProps = {
   selectedProject: Project;
-  setSelectedProject: (value: Project) => void;
+  setSelectedProject: (value: Project | null) => void;
 };
 
 const ImageGallery = ({
@@ -23,28 +23,29 @@ const ImageGallery = ({
 
   return (
     <div className="fixed w-screen h-screen top-0 left-0 bg-black/90 z-[10000] flex items-center justify-center">
-      <div className="absolute top-16 right-44 text-label-lg">
-        <IoMdClose
-          onClick={() => setSelectedProject(null)}
-          className="hover:scale-110 cursor-pointer"
-        />
-      </div>
+      <div className="absolute flex flex-col items-center justify-center">
+        <h2 className="text-title-md text-white mb-5">
+          {selectedProject.title}
+        </h2>
 
-      <div className="absolute">
         <img
           key={index}
-          src={selectedProject.gallery[index]}
-          alt=""
+          src={selectedProject.gallery?.[index] || ""}
+          alt="Imagen del proyecto"
           className="h-[500px] rounded-lg border border-white cursor-pointer object-cover"
         />
-        <div className="absolute top-[50%] w-full flex justify-between mt-4 text-white text-3xl">
+        <div className="flex mt-4 text-white text-3xl">
           <IoArrowBack
             onClick={() => setIndex(Math.max(0, index - 1))}
-            className="hover:scale-105 hover:cursor-pointer"
+            className="hover:scale-110 hover:cursor-pointer"
           />
           <IoArrowForwardOutline
             onClick={() => setIndex(Math.min(gallery.length - 1, index + 1))}
-            className="hover:scale-105 hover:cursor-pointer z-[1000000]"
+            className="hover:scale-110 hover:cursor-pointer z-[1000000]"
+          />
+          <IoMdClose
+            onClick={() => setSelectedProject(null)}
+            className="hover:scale-110 cursor-pointer"
           />
         </div>
       </div>

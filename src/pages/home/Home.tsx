@@ -5,15 +5,17 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import BgAnimation from "@/components/bg/BgAnimation";
 import Footer from "@/components/footer/Footer";
+import Stack from "./components/Stack";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-[url(/src/assets/images/decoration/noisy.webp)]">
       <Navbar />
       <Hero />
       <main className="relative">
         <Experience />
         <Projects />
+        <Stack />
       </main>
       <BgAnimation />
       <Footer />

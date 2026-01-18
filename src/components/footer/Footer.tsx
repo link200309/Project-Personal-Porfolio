@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className="flex flex-col bg-[#000]/90 w-full p-6 items-center gap-3">
       <SocialLinks />
       <div>
-        <img src={mainLogo} alt="Logo Desarrollador" className="h-36" />
+        <img src={mainLogo} alt="Logo Desarrollador" className="h-32" />
       </div>
-      <p className="text-gray-100">
+      <p className="text-gray-100 text-label-sm">
         © 2026 The Legend of John. Built with passion, code and imagination.
       </p>
     </footer>
