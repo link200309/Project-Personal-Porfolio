@@ -5,7 +5,7 @@ import { useState } from "react";
 //Components
 import SectionTitle from "@/components/titles/SectionTitle";
 import ProjectCard from "./ProjectCard";
-import ImageGallery from "@/components/imageGallery/ImageGallery";
+import ImageGallery from "@/components/image/ImageGallery";
 
 //Data
 import { projects } from "@/data/Projects.data";
