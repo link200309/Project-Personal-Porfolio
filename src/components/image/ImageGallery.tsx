@@ -1,14 +1,10 @@
-import screen1 from "@/assets/images/projects/projectTracker/screen1.webp";
-import screen2 from "@/assets/images/projects/projectTracker/screen2.webp";
-import screen3 from "@/assets/images/projects/projectTracker/screen3.webp";
-import screen4 from "@/assets/images/projects/projectTracker/screen4.webp";
-import screen5 from "@/assets/images/projects/projectTracker/screen5.webp";
 import { useState } from "react";
 import { IoArrowBack, IoArrowForwardOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { type Project } from "@/types";
 
-const gallery = [screen1, screen2, screen3, screen4, screen5];
+//components
+import TechLogo from "@/components/image/TechLogo";
 
 type ImageGalleryProps = {
   selectedProject: Project;
@@ -23,8 +19,8 @@ const ImageGallery = ({
 
   return (
     <div className="fixed w-screen h-screen top-0 left-0 bg-black/90 z-[10000] flex items-center justify-center">
-      <div className="absolute flex flex-col items-center justify-center">
-        <h2 className="text-title-md text-white mb-5">
+      <div className="absolute flex flex-col gap-4 items-center justify-center">
+        <h2 className="text-title-md text-primary-pri2">
           {selectedProject.title}
         </h2>
 
@@ -34,14 +30,43 @@ const ImageGallery = ({
           alt="Imagen del proyecto"
           className="h-[500px] rounded-lg border border-white cursor-pointer object-cover"
         />
-        <div className="flex mt-4 text-white text-3xl">
+
+        <div className="flex gap-4">
+          {selectedProject.technologies.map((logo, index) => (
+            <TechLogo key={index} logo={logo} />
+          ))}
+        </div>
+
+        <div className="flex text-gray-300 text-3xl">
           <IoArrowBack
             onClick={() => setIndex(Math.max(0, index - 1))}
             className="hover:scale-110 hover:cursor-pointer"
+            style={{
+              color: index == 0 ? "#d1d5db55" : "#d1d5db",
+            }}
           />
           <IoArrowForwardOutline
-            onClick={() => setIndex(Math.min(gallery.length - 1, index + 1))}
+            onClick={() =>
+              setIndex(
+                Math.min(
+                  (selectedProject.gallery?.length
+                    ? selectedProject.gallery.length
+                    : 0) - 1,
+                  index + 1,
+                ),
+              )
+            }
             className="hover:scale-110 hover:cursor-pointer z-[1000000]"
+            style={{
+              color:
+                index ==
+                (selectedProject.gallery?.length
+                  ? selectedProject.gallery.length
+                  : 0) -
+                  1
+                  ? "#d1d5db55"
+                  : "#d1d5db",
+            }}
           />
           <IoMdClose
             onClick={() => setSelectedProject(null)}
