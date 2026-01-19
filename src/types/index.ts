@@ -1,3 +1,5 @@
+import React from "react";
+
 export type Project = {
   title: string;
   description: string;
@@ -8,6 +10,18 @@ export type Project = {
     title: string;
     icon: string;
   }[];
+};
+
+export type Experience = {
+  title: string;
+  date: string;
+  descriptions: React.JSX.Element[];
+};
+
+export type Technologies = {
+  image: string;
+  color: string;
+  name: string;
 };
 
 export type ThemeContext = {

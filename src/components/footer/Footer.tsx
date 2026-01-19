@@ -3,7 +3,7 @@ import mainLogo from "@/assets/images/logos/main.png";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-[#000]/90 w-full p-6 items-center gap-3">
+    <footer className="flex flex-col w-full p-6 items-center gap-3">
       <SocialLinks />
       <div>
         <img src={mainLogo} alt="Logo Desarrollador" className="h-32" />

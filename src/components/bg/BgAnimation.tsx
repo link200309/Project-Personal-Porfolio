@@ -1,6 +1,6 @@
 const BgAnimation = () => {
   return (
-    <div className="h-screen fixed -z-10">
+    <div className="h-screen fixed -z-50 top-0">
       <svg
         version="1.1"
         id="stroke_jh"

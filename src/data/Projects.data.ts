@@ -11,13 +11,13 @@ import pythonLogo from "@/assets/images/technologies/logo-python.svg";
 import djangoLogo from "@/assets/images/technologies/logo-django.svg";
 import javaLogo from "@/assets/images/technologies/logo-java.svg";
 
-import trackingDotaScreen1 from "@/assets/images/projects/projectTracker/screen1.webp";
+import trackingDotaScreen1 from "@/assets/images/projects/projectTracker/screen1.png";
 import trackingDotaScreen2 from "@/assets/images/projects/projectTracker/screen2.webp";
 import trackingDotaScreen3 from "@/assets/images/projects/projectTracker/screen3.webp";
 import trackingDotaScreen4 from "@/assets/images/projects/projectTracker/screen4.webp";
 import trackingDotaScreen5 from "@/assets/images/projects/projectTracker/screen5.webp";
 
-import busScreen1 from "@/assets/images/projects/projectBus/screen1.png";
+import busScreen1 from "@/assets/images/projects/projectBus/screen11.png";
 import busScreen2 from "@/assets/images/projects/projectBus/screen2.png";
 import busScreen3 from "@/assets/images/projects/projectBus/screen3.png";
 import busScreen4 from "@/assets/images/projects/projectBus/screen4.png";

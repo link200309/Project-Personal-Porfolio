@@ -1,10 +1,4 @@
-import React from "react";
-
-type Experience = {
-  title: string;
-  date: string;
-  descriptions: React.JSX.Element[];
-};
+import { type Experience } from "@/types";
 
 export const experiences: Experience[] = [
   {

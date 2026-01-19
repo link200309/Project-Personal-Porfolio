@@ -3,11 +3,17 @@ import { CiMail } from "react-icons/ci";
 
 const links = [
   {
-    icon: <FaLinkedin />,
+    icon: <FaLinkedin className="text-title-lg text-gray-300" />,
     url: "https://www.linkedin.com/in/john-henry-chavarria-zurita-787343289/",
   },
-  { icon: <FaGithub />, url: "https://github.com/link200309" },
-  { icon: <CiMail />, url: "mailto:chavarriajohn08@gmail.com" },
+  {
+    icon: <FaGithub className="text-title-lg text-gray-300" />,
+    url: "https://github.com/link200309",
+  },
+  {
+    icon: <CiMail className="text-title-lg text-gray-300" />,
+    url: "mailto:chavarriajohn08@gmail.com",
+  },
 ];
 
 const SocialLinks = () => {
@@ -21,7 +27,7 @@ const SocialLinks = () => {
               href={link.url}
               target="_blank"
             >
-              <div className="p-2 bg-slate-200 rounded">{link.icon}</div>
+              {link.icon}
             </a>
           </li>
         ))}
