@@ -36,7 +36,7 @@ export const Hero = () => {
   };
 
   return (
-    <header className="h-screen w-full flex">
+    <header className="h-screen w-full flex" id="home">
       <motion.div className="w-[25vw] absolute animate-float">
         <img src={qeen1} alt="Hero Image" />
         {protections.map((protection) =>
@@ -58,7 +58,7 @@ export const Hero = () => {
                 }}
               ></motion.div>
             );
-          })
+          }),
         )}
       </motion.div>
 

@@ -27,3 +27,9 @@ export type ThemeContext = {
   setTheme: (theme: string) => void;
   onChangeTheme: () => void;
 };
+
+export type LanguageContext = {
+  language: string;
+  setLanguage: (theme: string) => void;
+  onChangeLanguage: () => void;
+};

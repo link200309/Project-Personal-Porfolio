@@ -13,7 +13,7 @@ import {
 const Stack = () => {
   return (
     <section className="mb-20">
-      <SectionTitle title="Tech Stack" />
+      <SectionTitle title="Tech Stack" id="tech-stack" />
 
       <div className="grid grid-cols-2 gap-5">
         <StackCard technologies={frontendTech} title="Frontend" />

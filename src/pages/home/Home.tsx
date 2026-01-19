@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import BgAnimation from "@/components/bg/BgAnimation";
 import Footer from "@/components/footer/Footer";
 import Stack from "./components/Stack";
+import AboutMe from "./components/AboutMe";
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
       <Navbar />
       <Hero />
       <main className="relative">
+        <AboutMe />
         <Experience />
         <Projects />
         <Stack />

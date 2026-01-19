@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <section className="relative my-20">
       <div className="absolute w-full h-full rounded-[30%] bg-[radial-gradient(circle_at_center,_rgba(255,120,0,0.35),_transparent_100%)] blur-[100px]"></div>
-      <SectionTitle title="Projects" />
+      <SectionTitle title="Projects" id="projects" />
       <article className="max-w-3xl mt-10 grid grid-cols-3 gap-4">
         {projects.map((project, index) => (
           <motion.div

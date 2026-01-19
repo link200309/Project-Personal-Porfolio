@@ -9,9 +9,9 @@ import { experiences } from "@/data/Experience.data";
 
 const Experience = () => {
   return (
-    <section className="my-20">
-      <SectionTitle title="Experience" />
-      <article className="max-w-3xl mt-10">
+    <section className="mt-20">
+      <SectionTitle title="Experience" id="experience" />
+      <article className="max-w-3xl">
         {experiences.map((exp, index) => {
           return (
             <motion.div

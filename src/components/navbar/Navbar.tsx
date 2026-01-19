@@ -1,10 +1,10 @@
 const Navbar = () => {
   const options = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Expirience", href: "#Expirience" },
+    { name: "About me", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Tech Stack", href: "#tech-stack" },
   ];
 
   return (

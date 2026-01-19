@@ -11,6 +11,7 @@ import useAnimationTyping from "@/hooks/useAnimationTyping";
 const HeroTitlte = () => {
   const title = useRef<HTMLHeadingElement | null>(null);
   useAnimationTyping("System Engineer and Developer", title);
+  
   return (
     <div className="w-[100%] flex flex-col gap-5 items-center justify-center z-10 text-center">
       <h1 className="text-display-lg font-bold">

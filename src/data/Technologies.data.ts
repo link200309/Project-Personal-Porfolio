@@ -55,9 +55,9 @@ export const technologies = {
   docker: { image: logoDocker, color: "#2496ED", name: "Docker" },
   postman: { image: logoPostman, color: "#FF6C37", name: "Postman" },
   linux: { image: logoLinux, color: "#F7DF1E", name: "Linux" },
-  python: { image: logoPython, color: "#30A9DC", name: "Python" },
+  python: { image: logoPython, color: "#30A9DC", name: "Python+Tkinder" },
   django: { image: logoDjango, color: "#63d664", name: "Django" },
-  java: { image: logoJava, color: "#007396", name: "Java" },
+  java: { image: logoJava, color: "#007396", name: "Java+Swing" },
 };
 
 export const frontendTech: Technologies[] = [
