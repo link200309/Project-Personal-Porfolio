@@ -4,12 +4,10 @@ export type Project = {
   title: string;
   description: string;
   application: string;
+  front?: string;
   gallery?: string[];
   link: string;
-  technologies: {
-    title: string;
-    icon: string;
-  }[];
+  technologies: Technologies[];
 };
 
 export type Experience = {

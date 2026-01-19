@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       onMouseOut={outLight}
     >
       <img
-        src={project.gallery ? project.gallery[0] : ""}
+        src={project.gallery ? project.front : ""}
         alt="imagen de tarjeta"
         className="absolute inset-0 w-full h-full object-cover rounded-md"
       />

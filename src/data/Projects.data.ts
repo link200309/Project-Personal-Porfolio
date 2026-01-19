@@ -1,28 +1,20 @@
-import reactLogo from "@/assets/images/technologies/logo-react.svg";
-import expressLogo from "@/assets/images/technologies/logo-express.svg";
-import postgresLogo from "@/assets/images/technologies/logo-posgres.svg";
-import reactNativeLogo from "@/assets/images/technologies/logo-react.svg";
-import prismaLogo from "@/assets/images/technologies/logo-prisma.svg";
-import tailwindLogo from "@/assets/images/technologies/logo-tailwindcss.svg";
-import springLogo from "@/assets/images/technologies/logo-springboot.svg";
-import mavenLogo from "@/assets/images/technologies/logo-maven.svg";
-import laravelLogo from "@/assets/images/technologies/logo-laravel.svg";
-import pythonLogo from "@/assets/images/technologies/logo-python.svg";
-import djangoLogo from "@/assets/images/technologies/logo-django.svg";
-import javaLogo from "@/assets/images/technologies/logo-java.svg";
+import { technologies } from "./Technologies.data";
 
-import trackingDotaScreen1 from "@/assets/images/projects/projectTracker/screen1.png";
+import trackingDotaFront from "@/assets/images/projects/projectTracker/front.png";
+import trackingDotaScreen1 from "@/assets/images/projects/projectTracker/screen1.webp";
 import trackingDotaScreen2 from "@/assets/images/projects/projectTracker/screen2.webp";
 import trackingDotaScreen3 from "@/assets/images/projects/projectTracker/screen3.webp";
 import trackingDotaScreen4 from "@/assets/images/projects/projectTracker/screen4.webp";
 import trackingDotaScreen5 from "@/assets/images/projects/projectTracker/screen5.webp";
 
-import busScreen1 from "@/assets/images/projects/projectBus/screen11.png";
+import busFront from "@/assets/images/projects/projectBus/front.png";
+import busScreen1 from "@/assets/images/projects/projectBus/screen1.png";
 import busScreen2 from "@/assets/images/projects/projectBus/screen2.png";
 import busScreen3 from "@/assets/images/projects/projectBus/screen3.png";
 import busScreen4 from "@/assets/images/projects/projectBus/screen4.png";
 import busScreen5 from "@/assets/images/projects/projectBus/screen5.png";
 
+import teachingFront from "@/assets/images/projects/projectPythonTeaching/front.png";
 import teachingScreen1 from "@/assets/images/projects/projectPythonTeaching/screen1.png";
 import teachingScreen2 from "@/assets/images/projects/projectPythonTeaching/screen2.png";
 import teachingScreen3 from "@/assets/images/projects/projectPythonTeaching/screen3.png";
@@ -47,6 +39,7 @@ import rentingScreen2 from "@/assets/images/projects/projectRentingFriends/scree
 import rentingScreen3 from "@/assets/images/projects/projectRentingFriends/screen3.jpg";
 import rentingScreen4 from "@/assets/images/projects/projectRentingFriends/screen4.jpg";
 
+import gameFront from "@/assets/images/projects/projectDesktopGames/front.png";
 import gameScreen1 from "@/assets/images/projects/projectDesktopGames/screen1.png";
 import gameScreen2 from "@/assets/images/projects/projectDesktopGames/screen2.png";
 import gameScreen3 from "@/assets/images/projects/projectDesktopGames/screen3.png";
@@ -62,6 +55,7 @@ export const projects: Project[] = [
       "Participé en el desarrollo del sistema, con un enfoque en la creación de interfaces, endopoints y el GSI (Game State Integration) para el juego.",
     link: "",
     application: "Web Page",
+    front: trackingDotaFront,
     gallery: [
       trackingDotaScreen1,
       trackingDotaScreen2,
@@ -70,22 +64,12 @@ export const projects: Project[] = [
       trackingDotaScreen5,
     ],
     technologies: [
-      {
-        title: "React",
-        icon: reactLogo,
-      },
-      {
-        title: "TypeScript",
-        icon: reactLogo,
-      },
-      {
-        title: "Express",
-        icon: expressLogo,
-      },
-      {
-        title: "MongoDB",
-        icon: postgresLogo,
-      },
+      technologies.react,
+      technologies.typescript,
+      technologies.tailwindcss,
+      technologies.express,
+      technologies.mongodb,
+      technologies.docker,
     ],
   },
   {
@@ -93,21 +77,13 @@ export const projects: Project[] = [
     description:
       "Encargado del diseño y desarrollo de las interfaces de usuario, así como la creación de APIs.",
     link: "",
+    front: busFront,
     gallery: [busScreen1, busScreen2, busScreen3, busScreen4, busScreen5],
     application: "Mobile App",
     technologies: [
-      {
-        title: "React Native",
-        icon: reactNativeLogo,
-      },
-      {
-        title: "Express",
-        icon: expressLogo,
-      },
-      {
-        title: "Prisma",
-        icon: prismaLogo,
-      },
+      technologies.reactNative,
+      technologies.express,
+      technologies.postgresql,
     ],
   },
   {
@@ -115,6 +91,7 @@ export const projects: Project[] = [
     description:
       "Responsable del diseño y desarrollo de las interfaces de usuario y de la implementación de un editor de código interactivo para ejercicios prácticos.",
     link: "",
+    front: teachingFront,
     gallery: [
       teachingScreen1,
       teachingScreen2,
@@ -125,22 +102,11 @@ export const projects: Project[] = [
     ],
     application: "Web Page",
     technologies: [
-      {
-        title: "React",
-        icon: reactLogo,
-      },
-      {
-        title: "Tailwind",
-        icon: tailwindLogo,
-      },
-      {
-        title: "Spring Boot",
-        icon: springLogo,
-      },
-      {
-        title: "Maven",
-        icon: mavenLogo,
-      },
+      technologies.react,
+      technologies.tailwindcss,
+      technologies.springboot,
+      technologies.postgresql,
+      technologies.docker,
     ],
   },
   {
@@ -148,6 +114,7 @@ export const projects: Project[] = [
     description:
       "Me encargué principalmente de la inscripción manual, validaciones de formularios y las APIs necesarias para su funcionamiento.",
     link: "",
+    front: olympicScreen1,
     gallery: [
       olympicScreen1,
       olympicScreen2,
@@ -158,58 +125,33 @@ export const projects: Project[] = [
     ],
     application: "Web Page",
     technologies: [
-      {
-        title: "React",
-        icon: reactLogo,
-      },
-      {
-        title: "Laravel",
-        icon: laravelLogo,
-      },
-      {
-        title: "Eloquent ORM",
-        icon: "",
-      },
+      technologies.react,
+      technologies.laravel,
+      technologies.mysql,
     ],
   },
   {
-    title: "Samba Server Manager for Ubuntu",
+    title: "Samba Server Manager for Linux",
     description:
       "Desarrollé la interfaz gráfica y la ejecución de comandos del sistema.",
     link: "",
+    front: sambaScreen1,
     gallery: [sambaScreen1, sambaScreen2, sambaScreen3, sambaScreen4],
     application: "Desktop App",
-    technologies: [
-      {
-        title: "Python",
-        icon: pythonLogo,
-      },
-      {
-        title: "Tkinter",
-        icon: "",
-      },
-    ],
+    technologies: [technologies.python, technologies.linux],
   },
   {
     title: "Renting friends platform",
     description:
       "Trabajé tanto en la creación de interfaces como en el desarrollo de APIs para la comunicación entre módulos.",
     link: "",
+    front: rentingScreen1,
     gallery: [rentingScreen1, rentingScreen2, rentingScreen3, rentingScreen4],
     application: "Web Page",
     technologies: [
-      {
-        title: "React",
-        icon: reactLogo,
-      },
-      {
-        title: "Django",
-        icon: djangoLogo,
-      },
-      {
-        title: "Django ORM",
-        icon: djangoLogo,
-      },
+      technologies.react,
+      technologies.django,
+      technologies.postgresql,
     ],
   },
   {
@@ -217,17 +159,9 @@ export const projects: Project[] = [
     description:
       "Desarrollé juegos como tres en raya, serpiente y plataformas 2D simples.",
     link: "",
+    front: gameFront,
     gallery: [gameScreen1, gameScreen2, gameScreen3, gameScreen4, gameScreen5],
     application: "Desktop App",
-    technologies: [
-      {
-        title: "Java",
-        icon: javaLogo,
-      },
-      {
-        title: "Swing",
-        icon: "",
-      },
-    ],
+    technologies: [technologies.java],
   },
 ];
