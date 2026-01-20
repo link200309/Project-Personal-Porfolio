@@ -3,15 +3,16 @@ import { useEffect, useRef, type RefObject } from "react";
 
 const useAnimationTyping = (
   text: string,
-  title: RefObject<HTMLHeadingElement | null>
+  title: RefObject<HTMLHeadingElement | null>,
 ): void => {
   const render = useRef(false);
 
   useEffect(() => {
     if (!title) return;
-    
+
     const typingTitle = () => {
       render.current = true;
+      title.current.textContent = "";
       let index = 0;
       const interval = setInterval(() => {
         if (index < text.length && title.current) {
@@ -19,6 +20,7 @@ const useAnimationTyping = (
           index++;
         } else {
           clearInterval(interval);
+          render.current = false;
         }
       }, 100);
     };

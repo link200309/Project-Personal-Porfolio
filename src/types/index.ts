@@ -2,11 +2,11 @@ import React from "react";
 
 export type Project = {
   title: string;
-  description: string;
+  titleEs?: string;
   application: string;
+  applicationEs?: string;
   front?: string;
   gallery?: string[];
-  link: string;
   technologies: Technologies[];
 };
 
@@ -32,4 +32,7 @@ export type LanguageContext = {
   language: string;
   setLanguage: (theme: string) => void;
   onChangeLanguage: () => void;
+  t: Content;
 };
+
+export type Content = typeof import("@/data/en/Content").content;

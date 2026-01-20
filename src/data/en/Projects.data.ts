@@ -51,10 +51,9 @@ import { type Project } from "@/types";
 export const projects: Project[] = [
   {
     title: "Tracking for Dota 2",
-    description:
-      "Participé en el desarrollo del sistema, con un enfoque en la creación de interfaces, endopoints y el GSI (Game State Integration) para el juego.",
-    link: "",
+    titleEs: "Tracker para Dota 2",
     application: "Web Page",
+    applicationEs: "Página Web",
     front: trackingDotaFront,
     gallery: [
       trackingDotaScreen1,
@@ -74,12 +73,11 @@ export const projects: Project[] = [
   },
   {
     title: "Bus ticket reservation",
-    description:
-      "Encargado del diseño y desarrollo de las interfaces de usuario, así como la creación de APIs.",
-    link: "",
+    titleEs: "Reserva de boletos de autobús",
+    application: "Mobile App",
+    applicationEs: "Aplicación Móvil",
     front: busFront,
     gallery: [busScreen1, busScreen2, busScreen3, busScreen4, busScreen5],
-    application: "Mobile App",
     technologies: [
       technologies.reactNative,
       technologies.express,
@@ -88,9 +86,9 @@ export const projects: Project[] = [
   },
   {
     title: "Python teaching platform",
-    description:
-      "Responsable del diseño y desarrollo de las interfaces de usuario y de la implementación de un editor de código interactivo para ejercicios prácticos.",
-    link: "",
+    titleEs: "Plataforma de enseñanza de Python",
+    application: "Web Page",
+    applicationEs: "Página Web",
     front: teachingFront,
     gallery: [
       teachingScreen1,
@@ -100,7 +98,6 @@ export const projects: Project[] = [
       teachingScreen5,
       teachingScreen6,
     ],
-    application: "Web Page",
     technologies: [
       technologies.react,
       technologies.tailwindcss,
@@ -111,9 +108,9 @@ export const projects: Project[] = [
   },
   {
     title: "Registration for the Oh! Sansi Olympics (Academic Project)",
-    description:
-      "Me encargué principalmente de la inscripción manual, validaciones de formularios y las APIs necesarias para su funcionamiento.",
-    link: "",
+    titleEs: "Registro para las Olimpiadas Oh! Sansi (Proyecto Académico)",
+    application: "Web Page",
+    applicationEs: "Página Web",
     front: olympicScreen1,
     gallery: [
       olympicScreen1,
@@ -123,7 +120,6 @@ export const projects: Project[] = [
       olympicScreen5,
       olympicScreen6,
     ],
-    application: "Web Page",
     technologies: [
       technologies.react,
       technologies.laravel,
@@ -132,22 +128,20 @@ export const projects: Project[] = [
   },
   {
     title: "Samba Server Manager for Linux",
-    description:
-      "Desarrollé la interfaz gráfica y la ejecución de comandos del sistema.",
-    link: "",
+    titleEs: "Administrador de Servidor Samba para Linux",
+    application: "Desktop App",
+    applicationEs: "Aplicación de Escritorio",
     front: sambaScreen1,
     gallery: [sambaScreen1, sambaScreen2, sambaScreen3, sambaScreen4],
-    application: "Desktop App",
     technologies: [technologies.python, technologies.linux],
   },
   {
     title: "Renting friends platform",
-    description:
-      "Trabajé tanto en la creación de interfaces como en el desarrollo de APIs para la comunicación entre módulos.",
-    link: "",
+    titleEs: "Plataforma de alquiler de amigos",
+    application: "Web Page",
+    applicationEs: "Página Web",
     front: rentingScreen1,
     gallery: [rentingScreen1, rentingScreen2, rentingScreen3, rentingScreen4],
-    application: "Web Page",
     technologies: [
       technologies.react,
       technologies.django,
@@ -156,12 +150,11 @@ export const projects: Project[] = [
   },
   {
     title: "Desktop games",
-    description:
-      "Desarrollé juegos como tres en raya, serpiente y plataformas 2D simples.",
-    link: "",
+    titleEs: "Juegos de escritorio",
+    application: "Desktop App",
+    applicationEs: "Aplicación de Escritorio",
     front: gameFront,
     gallery: [gameScreen1, gameScreen2, gameScreen3, gameScreen4, gameScreen5],
-    application: "Desktop App",
     technologies: [technologies.java],
   },
 ];

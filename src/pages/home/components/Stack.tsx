@@ -8,18 +8,22 @@ import {
   backendTech,
   databaseTech,
   tools,
-} from "@/data/Technologies.data";
+} from "@/data/en/Technologies.data";
+
+//hooks
+import { useLanguage } from "@/context/LanguageContext";
 
 const Stack = () => {
+  const { t } = useLanguage();
   return (
     <section className="mb-20">
-      <SectionTitle title="Tech Stack" id="tech-stack" />
+      <SectionTitle title={t.titles.techStack} id="tech-stack" />
 
       <div className="grid grid-cols-2 gap-5">
-        <StackCard technologies={frontendTech} title="Frontend" />
-        <StackCard technologies={backendTech} title="Backend" />
-        <StackCard technologies={databaseTech} title="Data Base" />
-        <StackCard technologies={tools} title="Tools" />
+        <StackCard technologies={frontendTech} title={t.techStack.frontend} />
+        <StackCard technologies={backendTech} title={t.techStack.backend} />
+        <StackCard technologies={databaseTech} title={t.techStack.databases} />
+        <StackCard technologies={tools} title={t.techStack.tools} />
       </div>
     </section>
   );

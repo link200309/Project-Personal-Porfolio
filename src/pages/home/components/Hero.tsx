@@ -9,7 +9,7 @@ import clickHere from "@/assets/images/characters/clickhere.png";
 import clickHereDark from "@/assets/images/characters/clickheredark.png";
 
 //Components
-import HeroTitlte from "./HeroTitlte";
+import HeroTitle from "./HeroTitle";
 
 //hooks
 import useAnimationChara from "@/hooks/useAnimationChara";
@@ -100,7 +100,7 @@ export const Hero = () => {
         )}
       </motion.div>
 
-      <HeroTitlte />
+      <HeroTitle />
     </header>
   );
 };

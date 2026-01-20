@@ -7,21 +7,20 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 //Hooks
 import useAnimationTyping from "@/hooks/useAnimationTyping";
+import { useLanguage } from "@/context/LanguageContext";
 
-const HeroTitlte = () => {
+const HeroTitle = () => {
+  const { t } = useLanguage();
   const title = useRef<HTMLHeadingElement | null>(null);
-  useAnimationTyping("System Engineer and Developer", title);
-  
+  useAnimationTyping(t.hero.title, title);
+
   return (
     <div className="w-[100%] flex flex-col gap-5 items-center justify-center z-10 text-center">
       <h1 className="text-display-lg font-bold">
         John <span className="text-primary-pri3">Henry</span>
       </h1>
       <h2 className="text-display-md text-primary-pri1" ref={title}></h2>
-      <p>
-        Hello!! I'm a passionate developer with experience in building web
-        applications.
-      </p>
+      <p>{t.hero.subtitle}</p>
 
       <div className="flex items-center justify-center gap-5">
         <FaLinkedin className="text-display-sm rounded" />
@@ -29,10 +28,10 @@ const HeroTitlte = () => {
       </div>
 
       <Button variant="outline" width="10%">
-        Descargar CV
+        {t.hero.button}
       </Button>
     </div>
   );
 };
 
-export default HeroTitlte;
+export default HeroTitle;

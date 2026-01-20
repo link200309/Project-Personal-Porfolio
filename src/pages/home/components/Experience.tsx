@@ -4,15 +4,17 @@ import { motion } from "framer-motion";
 //Componentes
 import SectionTitle from "@/components/titles/SectionTitle";
 
-//Data
-import { experiences } from "@/data/Experience.data";
+//hooks
+import { useLanguage } from "@/context/LanguageContext";
 
 const Experience = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="mt-20">
-      <SectionTitle title="Experience" id="experience" />
+      <SectionTitle title={t.titles.experience} id="experience" />
       <article className="max-w-3xl">
-        {experiences.map((exp, index) => {
+        {t.experience.map((exp, index) => {
           return (
             <motion.div
               key={index}

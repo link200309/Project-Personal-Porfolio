@@ -8,16 +8,20 @@ import ProjectCard from "./ProjectCard";
 import ImageGallery from "@/components/image/ImageGallery";
 
 //Data
-import { projects } from "@/data/Projects.data";
+import { projects } from "@/data/en/Projects.data";
 import { type Project } from "@/types";
+
+//hooks
+import { useLanguage } from "@/context/LanguageContext";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const { t } = useLanguage();
 
   return (
     <section className="relative my-20">
       <div className="absolute w-full h-full rounded-[30%] bg-[radial-gradient(circle_at_center,_rgba(255,120,0,0.35),_transparent_100%)] blur-[100px]"></div>
-      <SectionTitle title="Projects" id="projects" />
+      <SectionTitle title={t.titles.projects} id="projects" />
       <article className="max-w-3xl mt-10 grid grid-cols-3 gap-4">
         {projects.map((project, index) => (
           <motion.div
