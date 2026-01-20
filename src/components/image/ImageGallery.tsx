@@ -6,6 +6,9 @@ import { type Project } from "@/types";
 //components
 import TechLogo from "@/components/image/TechLogo";
 
+//hooks
+import { useLanguage } from "@/context/LanguageContext";
+
 type ImageGalleryProps = {
   selectedProject: Project;
   setSelectedProject: (value: Project | null) => void;
@@ -16,12 +19,13 @@ const ImageGallery = ({
   setSelectedProject,
 }: ImageGalleryProps) => {
   const [index, setIndex] = useState(0);
+  const { language } = useLanguage();
 
   return (
     <div className="fixed w-screen h-screen top-0 left-0 bg-black/90 z-[10000] flex items-center justify-center">
       <div className="absolute flex flex-col gap-4 items-center justify-center">
-        <h2 className="text-title-md text-primary-pri2">
-          {selectedProject.title}
+        <h2 className="text-title-md text-gray-300">
+          {language == "es" ? selectedProject.titleEs : selectedProject.title}
         </h2>
 
         <img

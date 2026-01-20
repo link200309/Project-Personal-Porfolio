@@ -44,7 +44,6 @@ import gameScreen1 from "@/assets/images/projects/projectDesktopGames/screen1.pn
 import gameScreen2 from "@/assets/images/projects/projectDesktopGames/screen2.png";
 import gameScreen3 from "@/assets/images/projects/projectDesktopGames/screen3.png";
 import gameScreen4 from "@/assets/images/projects/projectDesktopGames/screen4.png";
-import gameScreen5 from "@/assets/images/projects/projectDesktopGames/screen5.png";
 
 import { type Project } from "@/types";
 
@@ -154,7 +153,7 @@ export const projects: Project[] = [
     application: "Desktop App",
     applicationEs: "Aplicación de Escritorio",
     front: gameFront,
-    gallery: [gameScreen1, gameScreen2, gameScreen3, gameScreen4, gameScreen5],
+    gallery: [gameScreen1, gameScreen2, gameScreen3, gameScreen4],
     technologies: [technologies.java],
   },
 ];
