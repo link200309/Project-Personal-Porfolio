@@ -4,7 +4,6 @@ type ButtonProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "outline";
   size?: "sm" | "md" | "lg";
-  width?: string;
   onClick?: () => void;
 };
 
@@ -12,7 +11,6 @@ export const Button = ({
   children,
   variant = "primary",
   size = "md",
-  width = "100%",
   onClick,
 }: ButtonProps) => {
   const variants = {
@@ -28,7 +26,7 @@ export const Button = ({
     lg: "px-8 py-4 text-lg",
   };
 
-  const baseClasses = `rounded w-[${width}]`;
+  const baseClasses = `rounded`;
 
   const buttonClasses = `
      ${baseClasses}
