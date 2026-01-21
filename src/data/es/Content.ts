@@ -15,8 +15,7 @@ export const content = {
 
   hero: {
     title: "Ingeniero de Sistemas y Desarrollador",
-    subtitle:
-      "¡Hola! Soy un desarrollador apasionado con experiencia en la creación de aplicaciones web.",
+    subtitle: "Siempre aprendiendo, siempre creando.",
     button: "Descargar CV",
   },
 

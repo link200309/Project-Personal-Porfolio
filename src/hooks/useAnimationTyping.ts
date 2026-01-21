@@ -11,6 +11,7 @@ const useAnimationTyping = (
     if (!title) return;
 
     const typingTitle = () => {
+      if (!title.current) return;
       render.current = true;
       title.current.textContent = "";
       let index = 0;

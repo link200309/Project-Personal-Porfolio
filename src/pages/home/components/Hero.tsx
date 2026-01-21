@@ -21,6 +21,7 @@ export const Hero = () => {
   const [protections, setProtections] = useState<{ id: number }[]>([]);
   const sampleArray = useMemo(() => [...Array(8).keys()], []);
   const { theme } = useContext(ThemeContext);
+  const width = window.innerWidth;
 
   const handleShot = () => {
     setShots((prev) => [...prev, { id: Date.now() }]);
@@ -35,13 +36,21 @@ export const Hero = () => {
     setProtections((prev) => prev.filter((protection) => protection.id !== id));
   };
 
+  const calculateDistantX = () => {
+    return width * 0.55 * -1;
+  };
+
+  const calculateDistantY = () => {
+    return width < 768 ? 50 : width < 900 ? 100 : width < 1300 ? 150 : 200;
+  };
+
   return (
     <header className="h-screen w-full flex" id="home">
-      <motion.div className="w-[25vw] absolute animate-float">
+      <motion.div className="absolute w-[25vw] animate-float top-36 md:top-0">
         <img src={qeen1} alt="Hero Image" />
         {protections.map((protection) =>
           sampleArray.map((_, index) => {
-            const size = index * 150;
+            const size = index * 50 + (width * 0.7 - width) * -1;
             const xOffset = 0 - index * 2;
             return (
               <motion.div
@@ -63,7 +72,7 @@ export const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="w-[25vw] absolute right-0 z-50"
+        className="absolute w-[25vw] right-0 z-20 md:right-0 top-36 md:top-0"
         animate={controlsChara}
       >
         <img src={chara1} alt="Hero Chara Image" onClick={handleShot} />
@@ -71,9 +80,9 @@ export const Hero = () => {
         {shots.map((shot) => (
           <motion.div
             key={shot.id}
-            className="w-5 h-5 rounded-full bg-[#ffe3f4] shadow-[0_0px_35px] shadow-fuchsia-700 absolute top-[30%] z-50"
+            className="w-2 h-2 md:w-5 md:h-5 rounded-full bg-[#ffe3f4] shadow-[0_0px_35px] shadow-fuchsia-700 absolute top-[30%] z-50"
             initial={{ y: 0, x: 0 }}
-            animate={{ y: 200, x: -800 }}
+            animate={{ y: calculateDistantY(), x: calculateDistantX() }}
             transition={{ duration: 0.3 }}
             onAnimationComplete={() => handleCompleteShot(shot.id)}
           ></motion.div>
@@ -83,7 +92,7 @@ export const Hero = () => {
           <motion.img
             src={clickHereDark}
             alt="Hero Image"
-            className="w-24 relative left-16"
+            className="w-10 md:w-24 relative md:left-16 -top-5 md:top-0"
             initial={{ opacity: 0 }}
             transition={{ duration: 20, type: "spring" }}
             animate={{ opacity: 1 }}
@@ -92,7 +101,7 @@ export const Hero = () => {
           <motion.img
             src={clickHere}
             alt="Hero Image"
-            className="w-24 relative left-16"
+            className="w-10 md:w-24 relative md:left-16 -top-5 md:top-0"
             initial={{ opacity: 0 }}
             transition={{ duration: 20, type: "spring" }}
             animate={{ opacity: 1 }}

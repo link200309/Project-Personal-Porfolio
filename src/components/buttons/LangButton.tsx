@@ -1,5 +1,5 @@
 import { MdLanguage } from "react-icons/md";
-import { useLanguage } from "@/context/LanguageContext";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const LangButton = ({ className }: { className: string }) => {
   const { onChangeLanguage } = useLanguage();

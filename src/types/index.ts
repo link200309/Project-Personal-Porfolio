@@ -28,9 +28,11 @@ export type ThemeContext = {
   onChangeTheme: () => void;
 };
 
+export type lang = "en" | "es";
+
 export type LanguageContext = {
   language: string;
-  setLanguage: (theme: string) => void;
+  setLanguage: React.Dispatch<React.SetStateAction<lang>>;
   onChangeLanguage: () => void;
   t: Content;
 };

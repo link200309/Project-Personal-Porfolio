@@ -13,7 +13,7 @@ export const Home = () => {
     <div className="flex flex-col items-center bg-[url(/src/assets/images/decoration/noisy.webp)]">
       <Navbar />
       <Hero />
-      <main className="relative">
+      <main className="relative flex flex-col items-center md:flex-none md:items-stretch">
         <AboutMe />
         <Experience />
         <Projects />

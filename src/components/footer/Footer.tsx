@@ -8,7 +8,7 @@ const Footer = () => {
       <div>
         <img src={mainLogo} alt="Logo Desarrollador" className="h-32" />
       </div>
-      <p className="text-gray-100 text-label-sm">
+      <p className="dark:text-gray-100 text-label-xs md:text-label-sm text-center">
         © 2026 The Legend of John. Built with passion, code and imagination.
       </p>
     </footer>

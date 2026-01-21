@@ -1,13 +1,13 @@
 const BgAnimation = () => {
   return (
-    <div className="h-screen fixed -z-50 top-0">
+    <div className="h-[40%] fixed -z-50 top-[25%] md:h-screen md:top-0">
       <svg
         version="1.1"
         id="stroke_jh"
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        viewBox="0 0 500 300"
+        viewBox="0 0 410 300"
         xmlSpace="preserve"
         className="h-full w-auto shrink-0 bg-svg"
       >

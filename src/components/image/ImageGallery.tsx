@@ -7,7 +7,7 @@ import { type Project } from "@/types";
 import TechLogo from "@/components/image/TechLogo";
 
 //hooks
-import { useLanguage } from "@/context/LanguageContext";
+import { useLanguage } from "@/hooks/useLanguage";
 
 type ImageGalleryProps = {
   selectedProject: Project;
@@ -32,7 +32,7 @@ const ImageGallery = ({
           key={index}
           src={selectedProject.gallery?.[index] || ""}
           alt="Imagen del proyecto"
-          className="h-[500px] rounded-lg border border-white cursor-pointer object-cover"
+          className="md:h-[500px] rounded-lg border border-white cursor-pointer object-cover"
         />
 
         <div className="flex gap-4">

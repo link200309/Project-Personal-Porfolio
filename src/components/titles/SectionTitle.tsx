@@ -9,7 +9,7 @@ const SectionTitle = ({
 }) => {
   return (
     <h2
-      className={`text-center text-display-sm mb-8 font-bold text-primary-pri2 ${className}`}
+      className={`text-center text-title-lg md:text-display-sm mb-8 font-bold text-primary-pri2 ${className}`}
       id={id}
     >
       {title}

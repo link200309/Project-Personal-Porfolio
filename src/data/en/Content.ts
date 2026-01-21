@@ -15,8 +15,7 @@ export const content = {
 
   hero: {
     title: "System Engineer and Developer",
-    subtitle:
-      "Hello!! I'm a passionate developer with experience in building web applications.",
+    subtitle: "Always learning, always creating.",
     button: "Download CV",
   },
 

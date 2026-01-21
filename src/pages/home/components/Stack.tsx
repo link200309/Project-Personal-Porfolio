@@ -11,15 +11,15 @@ import {
 } from "@/data/en/Technologies.data";
 
 //hooks
-import { useLanguage } from "@/context/LanguageContext";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Stack = () => {
   const { t } = useLanguage();
   return (
-    <section className="mb-20">
+    <section className="mb-20 mx-4 md:mx-0">
       <SectionTitle title={t.titles.techStack} id="tech-stack" />
 
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <StackCard technologies={frontendTech} title={t.techStack.frontend} />
         <StackCard technologies={backendTech} title={t.techStack.backend} />
         <StackCard technologies={databaseTech} title={t.techStack.databases} />
