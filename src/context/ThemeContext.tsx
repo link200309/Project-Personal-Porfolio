@@ -12,12 +12,7 @@ interface ThemeContextProps {
 }
 
 export function ThemeProvider({ children }: ThemeContextProps) {
-  const [theme, setTheme] = useState(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  });
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     if (theme === "dark") {
