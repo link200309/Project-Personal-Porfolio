@@ -39,4 +39,11 @@ export const content = {
     projects: "Proyectos",
     techStack: "Stack Tecnológico",
   },
+
+  footer: {
+    phrase:
+      "© 2026 The Legend of John. Construido con pasión, código e imaginación.",
+    credits:
+      "Imágenes decorativas © Bilibili / BeDream, Aniplex. Utilizadas con fines ilustrativos y no comerciales.",
+  },
 };
