@@ -1,4 +1,3 @@
-import { footer } from "framer-motion/client";
 import { AboutMeDescription } from "./AboutMe.data";
 import { experiences } from "./Experience.data";
 import { projects } from "./Projects.data";
