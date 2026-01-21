@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 300" width="352" height="300">
+	<style>
+		.s0 { fill: #000000;stroke: #c4c4c4;stroke-linejoin: round;stroke-width: .5 } 
+	</style>
+	<path id="j-path" class="s0" d="m141 40v160q0 60-60 60-60 0-60-60h40q0 30 20 30 20 0 20-30v-160z"/>
+	<path id="h-path" class="s0" d="m191 40v220h40v-90h60v90h40v-220h-40v90h-60v-90z"/>
+</svg>
