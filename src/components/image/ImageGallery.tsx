@@ -32,7 +32,7 @@ const ImageGallery = ({
           key={index}
           src={selectedProject.gallery?.[index] || ""}
           alt="Imagen del proyecto"
-          className="md:h-[500px] rounded-lg border border-white cursor-pointer object-cover"
+          className="max-h-[500px] md:h-[500px] rounded-lg border border-white cursor-pointer object-cover"
           loading="lazy"
         />
 
