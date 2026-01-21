@@ -33,6 +33,7 @@ const ImageGallery = ({
           src={selectedProject.gallery?.[index] || ""}
           alt="Imagen del proyecto"
           className="md:h-[500px] rounded-lg border border-white cursor-pointer object-cover"
+          loading="lazy"
         />
 
         <div className="flex gap-4">

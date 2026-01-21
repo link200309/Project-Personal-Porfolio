@@ -8,7 +8,7 @@ const ThemeButton = ({ className }: { className: string }) => {
   return (
     <button onClick={onChangeTheme} className={className}>
       {theme === "light" ? (
-        <BsMoonStarsFill size={25} className="text-blue-500" />
+        <BsMoonStarsFill size={22} className="text-blue-500" />
       ) : (
         <MdWbSunny size={25} className="text-primary-pri2" />
       )}

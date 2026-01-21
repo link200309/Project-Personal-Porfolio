@@ -5,7 +5,7 @@ const LangButton = ({ className }: { className: string }) => {
   const { onChangeLanguage } = useLanguage();
   return (
     <button onClick={onChangeLanguage} className={className}>
-      <MdLanguage size={25} className="text-blue-500" />
+      <MdLanguage size={25} className="text-primary-pri1/90" />
     </button>
   );
 };
