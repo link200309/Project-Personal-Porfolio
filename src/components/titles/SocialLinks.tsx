@@ -27,7 +27,10 @@ const SocialLinks = () => {
     <div>
       <ul className="flex gap-5 justify-center">
         {links.map((link, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            className="hover:scale-110 transition-all duration-200 ease-in-out"
+          >
             <a
               className="text-label-lg text-black cursor-pointer"
               href={link.url}

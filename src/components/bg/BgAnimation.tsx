@@ -9,7 +9,7 @@ const BgAnimation = () => {
         y="0px"
         viewBox="0 0 410 300"
         xmlSpace="preserve"
-        className="h-full w-auto shrink-0 bg-svg"
+        className="h-full w-auto shrink-0 bg-svg stroke-[#919191] dark:stroke-[#464646]"
       >
         <path
           id="j-path"
@@ -21,7 +21,7 @@ const BgAnimation = () => {
        Q90 230, 110 230
        Q130 230, 130 200
        L130 40 Z"
-          stroke="#c4c4c4"
+          // stroke="#c4c4c4"
           fill="transparent"
           stroke-width="0.5"
           stroke-linejoin="round"
@@ -41,7 +41,7 @@ const BgAnimation = () => {
        L320 130
        L260 130
        L260 40 Z"
-          stroke="#c4c4c4"
+          // stroke="#c4c4c4"
           fill="transparent"
           stroke-width="0.5"
           stroke-linejoin="round"

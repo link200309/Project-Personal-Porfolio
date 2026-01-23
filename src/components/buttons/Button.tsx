@@ -14,7 +14,7 @@ export const Button = ({
   onClick,
 }: ButtonProps) => {
   const variants = {
-    primary: "bg-primary-pri1 text-white",
+    primary: "bg-primary-pri1/80 text-white backdrop-blur-sm",
     secondary: "bg-primary-pri2 text-white",
     outline:
       "border border-primary-pri1 text-primary-pri1 hover:bg-primary-pri1 hover:text-white",

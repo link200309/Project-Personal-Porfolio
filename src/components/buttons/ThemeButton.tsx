@@ -6,7 +6,10 @@ import { MdWbSunny } from "react-icons/md";
 const ThemeButton = ({ className }: { className: string }) => {
   const { onChangeTheme, theme } = useContext(ThemeContext);
   return (
-    <button onClick={onChangeTheme} className={className}>
+    <button
+      onClick={onChangeTheme}
+      className={`hover:scale-110 ${className} transition-all duration-300 ease-in-out`}
+    >
       {theme === "light" ? (
         <BsMoonStarsFill size={22} className="text-blue-500" />
       ) : (

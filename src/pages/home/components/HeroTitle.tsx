@@ -23,12 +23,12 @@ const HeroTitle = () => {
         className="text-display-sm md:text-display-md text-primary-pri1"
         ref={title}
       ></h2>
-      <p className="text-label-sm">{t.hero.subtitle}</p>
+      <p className="text-label-sm md:text-label-md">{t.hero.subtitle}</p>
 
       <SocialLinks />
 
       <a href="/CV - John-Henry-Chavarria-Zurita - 2026.pdf" download>
-        <Button variant="outline">{t.hero.button}</Button>
+        <Button variant="primary">{t.hero.button}</Button>
       </a>
     </div>
   );

@@ -28,7 +28,7 @@ body {
 }
 
 .bg-svg {
-  stroke: rgb(244, 244, 244);
+  /* stroke: rgb(70, 70, 70); */
   fill: transparent;
   stroke-width: 1px;
   stroke-dasharray: 1000px;
