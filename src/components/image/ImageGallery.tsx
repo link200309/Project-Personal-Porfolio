@@ -24,7 +24,7 @@ const ImageGallery = ({
   return (
     <div className="fixed w-screen h-screen top-0 left-0 bg-black/90 z-[10000] flex items-center justify-center">
       <div className="absolute flex flex-col gap-4 items-center justify-center">
-        <h2 className="text-title-md text-gray-300">
+        <h2 className="text-title-md text-gray-300 text-center">
           {language == "es" ? selectedProject.titleEs : selectedProject.title}
         </h2>
 

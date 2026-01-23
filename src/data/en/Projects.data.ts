@@ -90,21 +90,6 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Samba Server Manager for Linux",
-    titleEs: "Administrador de Servidor Samba para Linux",
-    application: "Desktop App",
-    applicationEs: "Aplicación de Escritorio",
-    front: "/projects/projectSambaManager/screen1.webp",
-    gallery: [
-      "/projects/projectSambaManager/screen1.webp",
-      "/projects/projectSambaManager/screen2.webp",
-      "/projects/projectSambaManager/screen3.webp",
-      "/projects/projectSambaManager/screen4.webp",
-    ],
-    technologies: [technologies.python, technologies.linux],
-  },
-
-  {
     title: "Renting friends platform",
     titleEs: "Plataforma de alquiler de amigos",
     application: "Web Page",
@@ -121,6 +106,42 @@ export const projects: Project[] = [
       technologies.django,
       technologies.postgresql,
     ],
+  },
+
+  {
+    title:
+      "Web Platform for Environmental Education and Connection with Waste Collectors",
+    titleEs:
+      "Plataforma web de educación ambiental y conexión con recolectoras",
+    application: "Web Page",
+    applicationEs: "Página Web",
+    front: "/projects/projectCleanUp/screen1.webp",
+    gallery: [
+      "/projects/projectCleanUp/screen1.webp",
+      "/projects/projectCleanUp/screen2.webp",
+      "/projects/projectCleanUp/screen3.webp",
+      "/projects/projectCleanUp/screen4.webp",
+      "/projects/projectCleanUp/screen5.webp",
+      "/projects/projectCleanUp/screen6.webp",
+      "/projects/projectCleanUp/screen7.webp",
+      "/projects/projectCleanUp/screen8.webp",
+    ],
+    technologies: [technologies.react, technologies.supabase],
+  },
+
+  {
+    title: "Samba Server Manager for Linux",
+    titleEs: "Administrador de Servidor Samba para Linux",
+    application: "Desktop App",
+    applicationEs: "Aplicación de Escritorio",
+    front: "/projects/projectSambaManager/screen1.webp",
+    gallery: [
+      "/projects/projectSambaManager/screen1.webp",
+      "/projects/projectSambaManager/screen2.webp",
+      "/projects/projectSambaManager/screen3.webp",
+      "/projects/projectSambaManager/screen4.webp",
+    ],
+    technologies: [technologies.python, technologies.linux],
   },
 
   {

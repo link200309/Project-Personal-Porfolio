@@ -28,6 +28,7 @@ import logoGithub from "@/assets/images/technologies/logo-github.svg";
 import logoDocker from "@/assets/images/technologies/logo-docker.svg";
 import logoPostman from "@/assets/images/technologies/logo-postman.svg";
 import logoLinux from "@/assets/images/technologies/logo-linux.png";
+import logoSupabase from "@/assets/images/technologies/logo-supabase.svg";
 
 import { type Technologies } from "@/types";
 
@@ -58,6 +59,7 @@ export const technologies = {
   python: { image: logoPython, color: "#30A9DC", name: "Python+Tkinder" },
   django: { image: logoDjango, color: "#63d664", name: "Django" },
   java: { image: logoJava, color: "#007396", name: "Java+Swing" },
+  supabase: { image: logoSupabase, color: "#3ECF8E", name: "Supabase" },
 };
 
 export const frontendTech: Technologies[] = [
